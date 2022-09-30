@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roomies</title>
+    <style>
+        .gb {
+            color: rgb(3, 18, 28);
+            background-color: azure;
+            border: 2px solid black;
+            border-radius: 14px;
+            width: 333px;
+            height: 46px;
+        }
+        
+        #inp {
+            color: rgb(118, 50, 25);
+            border: 3px solid black;
+            width: 218px;
+            height: 34px;
+            border-radius: 15px;
+            background-color: cornsilk;
+            margin: 3px;
+        }
+        
+        .in {
+            color: rgb(118, 50, 25);
+            border: 3px solid black;
+            width: 218px;
+            height: 34px;
+            border-radius: 15px;
+            background-color: cornsilk;
+            margin: 3px;
+        }
+        
+        #demo {
+            color: rgb(11, 11, 11);
+            background-color: rgb(17, 178, 178);
+            border-radius: 21px;
+            width: 321px;
+            font: 54px;
+        }
+        
+        .btn {
+            margin: 15px;
+            padding: 7px;
+            color: navy;
+            background: rgb(100, 151, 117);
+            border: 3px solid black;
+            border-radius: 13px;
+        }
+        
+        #ptr {
+            text-align: center;
+            text-decoration: dotted;
+        }
+        
+        .d1 {
+            height: 233px;
+            width: 233px;
+            border: 3px solid black;
+            border-radius: 20px;
+            margin: 24px;
+            flex-direction: column;
+        }
+        
+        #d2 {
+            height: 233px;
+            width: 233px;
+            border: 3px solid black;
+            border-radius: 20px;
+            flex-direction: column;
+        }
+        
+        .u1 {
+            font-size: large;
+            margin: 12px;
+            border: 2px solid black;
+            color: black;
+            background-color: rgb(217, 227, 162);
+            flex-direction: row;
+            padding: 5px;
+            border-radius: 11px;
+        }
+        
+         :hover.u1 {
+            cursor: pointer;
+            background-color: rgb(18, 75, 221);
+            font-style: italic;
+            color: aliceblue
+        }
+        
+        .home {
+            border: 2px solid black;
+            /* background-color: rgb(29, 185, 238); */
+            flex-direction: row;
+            align-items: center;
+            border-radius: 13px;
+        }
+        
+        .list {
+            display: flex;
+            text-decoration: none;
+            margin: auto;
+            padding: 2px;
+        }
+        
+        .div1 {
+            display: flex;
+            width: auto;
+            height: 191px;
+            border: 3px solid black;
+            border-radius: 13px;
+            /* background-color: rgb(29, 185, 238); */
+        }
+        
+        #body {
+            width: auto;
+            height: auto;
+            background: url("./spring-summer-season-abstract-nature-background-grass-blue-sky-back-49716369.jpg");
+            background-size: cover;
+        }
+        
+        .img1 {
+            width: 604px;
+            height: 144px;
+            padding: 12px;
+            /* border: 2px solid black; */
+            margin: 13px;
+        }
+        
+        .img2 {
+            width: 604px;
+            height: 144px;
+            padding: 13px;
+            /* border: 2px solid black; */
+            margin: 13px;
+        }
+        
+        .a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .hh {}
+    </style>
+    <script>
+        btn = () => {
+            let name = document.getElementsById("inp").value;
+            document.getElementById("demo").innerHTML = "welcome to my website  " + name;
+
+
+        }
+        fnc = () => {
+            document.getElementById("meme").innerHTML = "welcome sir these is home page";
+            alert("you are already on home page");
+        }
+    </script>
+</head>
+
+<body id="body">
+    <div class="home">
+        <li class="list">
+
+            <ul class="u1" onclick="fnc()"> <a href="#" class="a">Home</a></ul>
+            <ul class="u1"><a href="./product.html" class="a">Product</a></ul>
+            <ul class="u1"><a href="./ser.html" class="a">Services</a></ul>
+            <ul class="u1"><a href="./abt.html" class="a">About</a></ul>
+        </li>
+    </div>
+    <h1 class="gb">Welcome to my website</h1><br>
+    <h4 class="gs">Register here</h4>
+    <input type="text" placeholder="enter your name here" id="inp" value=""><br>
+    <input type="email" placeholder="enter your email" class="in"><br>
+    <input type="password" name="" id="" class="in" placeholder="enter password"><br>
+    <button type="button" onclick="btn()" class="btn">submit</button>
+    <p id="demo">
+        <h1></h1>
+    </p>
+    <p id="meme"></p>
+    <h3>Our Sponsers</h3>
+    <div class="div1">
+
+        <!-- <h2 class="hh">Our Sponsers</h2> -->
+
+        <img src="./download.jpg" alt="poor connection" class="img1">
+        <img src="./download.png" alt="check your internet" class="img2">
+
+    </div>
+</body>
+
+</html>
